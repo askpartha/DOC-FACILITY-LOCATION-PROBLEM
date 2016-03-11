@@ -1,0 +1,33 @@
+Multi-commodity, single stage, capacitated reliable facility location problem
+
+1. Introduction: Why should one study this problem?
+				1. Reliable papers
+				2. Multi-commodity
+2. Literature:  1. capacitated
+				2. multi-commodity
+				3. reliable
+				4. scatter search
+3. Mixed integer programming model: 
+				0. Problem type: UFL
+				1. Objective (expected, robustness, VaR)
+4. Scatter search based solution approach:
+size of refset 20-- 10 good quality, 10 diversified 
+Population 100
+
+				1. seed solution
+				2. diversification generation (Population)
+				3. improvement method:
+					-feasibility
+					-improvement
+				4. refset selection: 10 good quality and 10 diversified
+				5. subset generation
+				- all subsets of size 2
+				- subsets of size 3-- add the best solution with each of the pairs generated above
+									-- add the most diverified solution with each of the pairs generated above
+				6. solution combination: take the union of the facilities in each of the solutions to be combined, then close 
+				6.5 Refset update: better quality or more diversified
+				7. improvement method: local search-- neighbourhood swap and shift, move to the first better solution 
+				8. termination criterion: number of iterations
+				9. Refset rebuilding: try with the best solution as seed
+5. Computational experiment:
+				1. 

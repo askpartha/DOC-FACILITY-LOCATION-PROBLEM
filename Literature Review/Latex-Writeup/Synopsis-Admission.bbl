@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Arostegui2006}
+M.~A. Arostegui~Jr., S.~N. Kadipasaoglu, and B.~M. Khumawalab.
+\newblock An empirical comparison of tabu search, simulated annealing, and
+  genetic algorithms for facilities location problems.
+\newblock {\em Int. J. Production Economics}, 103:742--754, 2006.
+
+\bibitem{Lim2010}
+M.~Lim, M.~S. Daskin, A.~Bassamboo, and S.~Chopra.
+\newblock A facility reliability problem: Formulation, properties, and
+  algorithm.
+\newblock {\em Wiley Periodicals, Inc. Naval Research Logistics}, 57:58--70,
+  2010.
+
+\bibitem{Cui2010}
+C.~Tingting, O.~Yanfeng, and S.~Zuo-Jun Max~J.
+\newblock Reliable facility location design under the risk of disruptions.
+\newblock {\em Faculty Research, University of California Transportation
+  Center, UC Berkeley - Operations Research}, 2010.
+
+\end{thebibliography}

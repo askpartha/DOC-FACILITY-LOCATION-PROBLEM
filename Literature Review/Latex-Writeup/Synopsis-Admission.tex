@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{afterpage, enumerate,graphicx,url,rotating,setspace, amssymb,amsmath,natbib,booktabs,psfrag,mathrsfs}
+
+\usepackage[margin=0.8in]{geometry}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\voffset}{0in}
+
+\long\def\comment#1{}
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\title{\textbf{Synopsis on} \\  Metaheuristic Applications in Discrete Facility Location Problems: An Empirical Analysis}
+\date{}
+
+\begin{document}
+\maketitle
+Location analysis or analysis of facility location problems (FLP) are associated to modeling, formulation and solution of a class of problems that can best be described as identifying facilities at a given space according to some objective function. For continuous location problems, space for assigning the facilities are represented by their location coordinates. Whereas in discrete location problems, facilities can be opened from a set of defined locations. Broadly there are four major characteristics which define a location problem: (a) customers (demand points), who are already presumed to be in some specific locations (b) facilities that will be located (c) space where facilities and customers are located and (d) a metric which indicates the distance or time between customers and facilities. Direct applications of traditional facility location problems can be found in identifying warehouse locations, gas stations, retails outlets, solid waste transfer points, server locations etc. Examples of non-traditional location problems include product positioning, determination of apparel sizes etc.
+
+In our study, we focus on discrete facility location problems where a set of locations are already identified as possible facilities with a set of demand nodes (customers). Objective of FLP problem is either to minimize the total cost over the entire network or to minimize the maximum cost between a facility and a demand point. Like plant location and median problems are concerned with minimizing the demand weighted total distance between the facilities and demand nodes. A type of median problem, called $p$-median, where number of facilities is restricted to a particular number $p$. Decisions in these problems are taken in two levels: (a) which locations are to be used as facilities and (b) which facility will be used to serve a particular demand node. These models are typically useful when a cost-based or a profit-based objective is appropriate. In many contexts, however, the sum of distances is not an appropriate measure of the quality of the solution \cite{Guner2008}. This is particularly true when designing systems for emergency services. So in center location problems, objective emerges as to maximize the lowest service guaranteed to any demand node in the problem. In another variant of FLP, covering location problems, objective is to minimize the number of facilities that are needed to provide service to all customers with a constraint in largest allowable distances between any customer and the closest facility. Several variants of these basic location problems were attempted in published literature with capacitated or uncapacitated facilities, single or multiple objectives \cite{Yapicioglu2007}, deterministic or stochastic (reliable) facilities etc. 
+
+One specific type of facility location problem which we intend to examine closely is reliable facility location problem. In this problem category, facilities which serve the demand nodes have a chance of failure \cite{Lim2010} and it defines the service level of that facility. So instead of deterministic cost values in objective function, authors use expected costs and other probabilistic measures to optimize in the problem.
+
+
+The solutions approaches to address location problems are broadly segregated into two types: exact approaches and heuristic methods. Several traditional optimization methods like Mixed Integer Programming, Continuum Paroximation, Lagrangian relaxation etc. \cite{Cui2010} are able to solve the basic location problems with smaller sizes but fail to emulate the success for large problems because of its NP-hard nature. It is therefore reasonable to use heuristic and metaheuristic approaches to find satisfactory solutions which could, however, be some way from optimal solution of the problem in question. Published literature in the last $20$ years shows the dominance of genetic algorithm, tabu search and some other local search based techniques in addressing location problems. In recent years, metaheuristics like particle swarm optimization (PSO) and scatter search also yielded satisfactory results for some problem classes in FLP.  
+
+
+Metaheuristics are one kind of algorithmic framework which assigns a set of computational steps in a hope to find the optimal (or the near optimal) solution of a problem by iteratively trying to improve the candidate solutions with regard to certain stopping conditions. Metaheuristics are broadly classified into two categories:\cite{Arostegui2006} population based heuristic (genetic algorithm) and local search based heuristic (tabu search). In population based heuristic, a set of feasible solutions are generated to choose the best set of solutions among them using a fitness value. In the next iteration, that set of chosen solutions are used to create a new set of feasible solutions. Whereas in local search, one solution is chosen in each iteration, which is the best solution available in the set of neighboring solutions. For both types of metaheuristics, stopping conditions are typically defined as maximum iteration count or computational time. 
+
+In this work, we intend to do an empirical analysis to evaluate performance of different metaheuristic approaches in various problem categories under facility location problem in terms of solution quality obtained and computational time. We also plan to develop some hybrid metaheuristics for specific problem categories, e.g. reliable facility location problem, hierarchical facility location problem etc. We wish our work will contribute to the existing literature of metaheuristic application on FLP by analyzing performance of existing heuristics and by developing new heuristics for different problem categories.  
+
+\afterpage{\clearpage}
+
+% BibTeX users please use one of
+\bibliographystyle{plain}      % basic style, author-year citations
+
+\bibliography{FacilityLocation, FLP-PSO}   % name your BibTeX data base
+
+\end{document}

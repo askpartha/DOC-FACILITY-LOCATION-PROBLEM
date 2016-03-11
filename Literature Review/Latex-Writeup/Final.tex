@@ -1,0 +1,747 @@
+\documentclass[10pt]{article}
+\usepackage{afterpage, enumerate,graphicx,url,rotating,setspace, amssymb,amsmath,natbib,booktabs,psfrag,mathrsfs}
+
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9in}
+\setlength{\marginparwidth}{0in}
+\setlength{\evensidemargin}{0in}
+
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\voffset}{0in}
+
+\long\def\comment#1{}
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\title{Discrete Facility Location Problem: A Literature Survey}
+\author{Partha Sarathi Ghosh\thanks{Email:partha.silicon@gmail.com}, Prof. Sumanta Basu\thanks{OM Area, Indian Institute of Management Calcutta. Email: sumanta@iimcal.ac.in}}
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+
+	
+\textbf{Keywords:} Facility Location Problem, Demands, Facility, Node, Hub
+\end{abstract}
+
+\maketitle
+\section{Introduction}
+
+
+\section{Facility Location Model}
+\label{facility_location_model}
+
+
+Several Factors which are considered on research in Facility Location Model are in below \newline 
+\\
+1.	Location decisions are frequently made at all levels of human organization from individuals nad households to firms, governments agencies and even international agencies. \newline
+2.	Location model involve large sums of capital resources and their economic effects are long term. \newline
+3.	Location model frequently impose economic externalities, such externalities include pollution, congestion and economic development. \newline
+4.	Location model are difficult to solve optimally. \newline
+5.	Location Model are application specific the model implement in one application varies from another. \newline
+
+
+\subsection{Basic characteristic of facility location problem}
+
+\paragraph{Minisum facility location :} 
+Facility Location problem consists of a set of potential facility sites \textit{$\textbf{I}$} where a facility can be opened, and a set of demand points \textit{$\textbf{D}$} that must be serviced. The goal is to pick a subset \textit{$\textbf{F}$} of facilities to open, to minimize the sum of distances from each demand point to its nearest facility, plus the sum of opening costs of the facilities. A simple facility location problem is the \textit{Fermat-Weber problem}, in which a single facility is to be placed, with the only optimization criterion being the minimization of the sum of distances from a given set of point sites.
+
+\paragraph{Maxisum facility location :}
+In this type of problem objective is optimize the locating of facility as far as possible towards the infinity. In this type of problem maximize the maximum distance from a facility to customers. This type of facility also so called undesirable facility. e.g., set up a neuclear power plant, garbage dump, etc.
+
+\paragraph{Minimax facility location :}
+In this type problem seeks a location which minimizes the maximum distance to the sites. In the case of the Euclidean metric, it is known as the smallest enclosing sphere problem or \textit{1-center} problem. The planar case (smallest enclosing circle problem) had been thought to require optimal time $ \theta (n \log n) $.
+
+\paragraph{Maximin facility location :}
+This type of problem seeks a location which maximizes the minimum distance to the sites. In the case of the Euclidean metric, it is known as the largest empty sphereproblem.In the case of the Euclidean metric, it is known as the largest empty sphere problem. The planar case (largest empty circle problem) may be solved in optimal time $ \theta (n \log n) $.
+
+\subsection{Algorithms used for solving the FLP}
+\label{flp_algorithm}
+
+\paragraph{Heuristics}
+\begin{itemize}
+	\item Greedy
+	\item Alternate
+	\item Vertex Substitution
+	\item Branch and Bound
+\end{itemize}
+
+\paragraph{Meta-Heuristic}
+\begin{itemize}
+	\item Variable Neighborhood Search
+	\item Heuristic Concentration
+	\item Genetic Algorithm
+	\item GRASP Meta-Heuristic
+	\item Scatter Search
+	\item Path Relinking
+	\item Tabu search
+	\item Simulated Annealing
+	\item Neural Network
+	\item Particle Swarm Optimization
+	\item Ant Colony Optimization
+\end{itemize}
+
+\paragraph{Approximation Algorithms}
+\paragraph{Lagrangean Relaxation}
+\paragraph{Surrogate Relaxation}
+\paragraph{Surveys}
+\paragraph{IP Formulations and Reductions}
+\paragraph{Complexity}
+\paragraph{Graph Theoretic}
+\paragraph{Enumeration}
+\paragraph{Branch and Price}
+
+\section{Discrete Network Location Model}
+\label{discrete_facility_location_model}
+The general problem is in location model is that locate the new facilities to optimize some objectives. Distance or some measure which is more or less related to the distance like travel time, cost, demand satisfaction, congestion, etc is fundamental related to such type of problems. There are eight Basic facilities Location Model. In all described model specified network is given, as are the locations of demands to be served by the facilities and the existing facilities. The specified model classified according to their consideration of distance. One category is \textit{\textbf{Maximum Distance}} and another is \textit{\textbf{Total Distance}}. \textit{Set covering, maximal covering, p-center, p-dispersion} falls under Maximum Distance and \textit{p-median, fixed charge, hub and maxisum} falls under Total Distance.
+
+\begin{itemize}
+	\item Network models are those in \textsf{which} facilities and demand are distributed over the network
+	\item Discrete models are models \textsf{where} the demand and facilities are distributed over the network.
+\end{itemize}
+
+\subsection{Maximum Distance Model}
+Location model varies from application to application. There are some location model exists where a maximum distance exists a priori. In the facility location literature, a priori maximum distances such as these are known as  \textit{covering} distances. Demand within the covering distanceof its closest facility is considered "covered".An underlying assumptionof this measure of maximum distance is that demand is fully satisfied ifthe nearest facility is within the coverage distance and is not satisfied if theclosest facility is beyond that distance. That is, being closer to a facility thanthe maximum distance does not improve satisfaction.
+
+
+\subsubsection{Set Covering Location Problem (SCLP)}
+\label{sclp_def}
+
+\paragraph{Objective}
+Locate the minimum number of facilities require to \textit{coverd} all of the demand nodes.
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$d_{ij}$= Distance between demand node $i$ and candidate site $j$. \newline	
+$D_c$= Distance coverage. (constant distance for maximum covering) \newline	
+$N_i$= $j | d_{ij} < D_c$ \newline	
+		 = The set of all candidate location that can cover demand point $i$. \newline 		
+\\
+The decision variables are \newline
+$x_j$= 1, if locate at site $j$ \newline
+    = 0, if not 
+    					 
+\paragraph{Formulation of Problem} 
+SCLP can be formulated in the bellow objective function 
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:sclp_1}
+			Minimize \sum_{j\in J}x_j 
+	\end{equation}
+	subject to:
+	\begin{equation}
+	\label{eq:sclp_2}
+			\sum_{j\in N_i}x_j \geq 1  \forall i \in I
+	\end{equation}
+	\begin{equation}
+	\label{eq:sclp_3}
+			x_j\in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+\end{flushleft}
+
+\begin{itemize}
+		\item (\ref{eq:sclp_1}) the objective function minimizes the number of facility location.
+		\item (\ref{eq:sclp_2}) constraint set ensure that each demand node is covered by at least one facility.
+		\item (\ref{eq:sclp_3}) decide yes or no for the sitting decision.
+\end{itemize}
+Objective function will minimize the total fixed cost by arranging the sitting configuration rather than the number of facilities cited. set covering problem is   NP-Hard problem (Garey and Johnson, 1979).
+
+\subsubsection{Maximal Covering Location Problem (MCLP)}
+\label {mclp_def}
+
+\paragraph{Objective}
+The objective of \textit{set covering} problem is that all the demand nodes must be covered but in essence there is no budget constraint exists. The objective    of \textit{MCLP} (Church and ReVelle, 1974) is to locate predetermined number of facilities $p$, in such a way that the model will cover the maximize demand.      \textit{MCLP} assumes that may not be enough facility to be cover all the demands node. If not all the demand nodes can be covered then model seeks the sitting    scheme that cover the most of the demand.
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$h_i$= Demand at node $i$. \newline
+$p$= Number of facility to be locate \newline
+\\
+The decision variables are \newline
+$zij$= 1, demand node $I$ covered\newline
+		 = 0, if not 
+				 
+\paragraph{Formulation of Problem}
+The objective function of MCLP is define in below
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:mclp_1}
+			Maximize \sum_{i\in I}h_iz_i 
+	\end{equation}
+	
+	subject to:
+	
+	\begin{equation}
+	\label{eq:mclp_2}
+		 \sum_{j\in N_i}x_j - z_i \geq 1  \forall i \in I
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:mclp_3}
+			\sum_{j\in J}x_j = p
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:mclp_4}
+			x_j\in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:mclp_5}
+			z_i\in \left\{0, 1\right\} \forall i \in I
+	\end{equation}
+\end{flushleft}
+
+\begin{itemize}
+	\item (\ref{eq:mclp_1}) objective function will maximize the total demand covered.
+	\item (\ref{eq:mclp_2}) constraint set ensure that demand node $i$ is not counted as covered unless we locate at one of the candidate sites that covers node $i$.
+	\item (\ref{eq:mclp_3}) limits the number of facilities to be cited.
+	\item (\ref{eq:mclp_4}) reflects the binary nature of the facility sitting decision.
+	\item (\ref{eq:mclp_5}) reflects the binary nature of the demand node coverage. 
+\end{itemize}
+MCLP problem is also an \textit{NP-Hard} problem (Megiddo, Zemel and Hakimi, 1983).
+
+\subsubsection{P-center}
+\label{p-center_def}
+
+\paragraph{Objective}
+The \textit{p-center} problem (Hakimi, 1964, 1965)addresseste problem of minimizing the maximum distance demand is from its closest facility given that we are sitting a pre determined number of facilities.
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$W$= Maximum distance between the demand node and the facility to which it is assigned\newline
+$h_i$= Demand at node $i$ \newline
+$p$= Number of facility to be locate. \newline
+\\
+The decision variables are \newline
+$y_{ij}$= 1, if demand node $i$ assign to a facility at node $j$ \newline
+        = 0, if not
+
+\paragraph{Formulation of Problem}
+The objective function is
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:pcenter_1}
+				Maximize W 
+	\end{equation}
+	
+	subject to:
+				
+	\begin{equation}
+	\label{eq:pcenter_2}
+			\sum_{j\in J}x_j = p
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pcenter_3}
+			\sum_{j\in J}y_{ij} = 1		\forall i \in I
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pcenter_4}
+			y_{ij} - x_j \leq 0  \forall i \in I, j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pcenter_5}
+		W - \sum_{j \in J}h_i d_{ij}y_{ij} \geq 0 \forall i \in I
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pcenter_6}
+			x_j\in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pcenter_7}
+			y_{ij} \in \left\{0, 1\right\}  \forall i \in I, j \in J
+	\end{equation}
+\end{flushleft}
+
+\begin{itemize}
+	\item (\ref{eq:pcenter_1}) objective function minimize the maximum demand weighted distance between each demand node and its closest open facility.
+	\item (\ref{eq:pcenter_2}) constraint stipulate that $p$ facilities to be located.
+	\item (\ref{eq:pcenter_3}) demand node be assigned to exactly one facility.
+	\item (\ref{eq:pcenter_4}) demand node assignments only to open facilities.
+	\item (\ref{eq:pcenter_5}) the lower bound of the maximum demand weighted distance, which is being minimized
+	\item (\ref{eq:pcenter_6}) sitting decision variables as binary.
+	\item (\ref{eq:pcenter_7}) constraint set requires the demand at a node to be assigned to one facility only.
+\end{itemize}
+
+For fixed value of $p$, vertex \textit{p-center} problem can be solved by $O(N^p)$ time since we can enumerate each possible set of candidate location in this amount of time. For variable values of $p$, the problem is NP-Hard (Garey and Johnson, 1979).
+
+\subsubsection{P-dispersion}
+\label{p-dispersion_def}
+
+\paragraph{Objective}
+For all the model which discussed above the concern is with distance between the demand and new facilities. Also one assumption is that being close to a facility desirable. The difference between p-center and \textit{p-dispersion} is that (Kuby, 1987) first, it is only concerned with the distance between the facilities and secondly the objective is to maximize the minimum distance between any pair of facilities.
+The \textit{p-dispersion-sum} problem is the problem of locating $p$ facilities at some of $n$ predefined locations, such that the distance sum between the $p$ facilities is maximized. The related \textit{p-dispersion} problem is the problem of locating $p$ facilities such that the minimum distance between two facilities is as large as possible. A solution algorithm based on transformation of the \textit{p-dispersion} problem to the \textit{p-dispersion-sum} problem is finally presented (Psinger, 2006 ).
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$D$= separation distance between any pair of facilities \newline
+$M$= Large constant  (e.g., -------------------------- ) \newline
+$p$= number of facility to be locate \newline
+\\
+The decision variables are \newline
+$d_{ij}$= Distance between the demand node $i$ and candidate location node $j$ \newline
+
+\paragraph{Formulation of Problem}
+The objective function of p-dispersion problem defined in below
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:pdsprsn_1}
+				Maximize D
+	\end{equation}
+	
+	subject to:		
+	
+	\begin{equation}
+	\label{eq:pdsprsn_2}
+			\sum_{j\in J}x_j = p 
+	\end{equation}
+			
+	\begin{equation}
+	\label{eq:pdsprsn_3}
+		D + \left(M-d_{ij} \right)x_i + \left(M-d_{ij} \right) x_j \leq 2M - d_j \forall i, j \in J, i < j
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pdsprsn_4}
+			x_j \in \left\{ 0, 1 \right\} \forall j \in J
+	\end{equation}
+\end{flushleft}
+
+\begin{itemize}
+	\item (\ref{eq:pdsprsn_1}) objective function maximizes the distance between the two closest facilities.
+	\item (\ref{eq:pdsprsn_2}) constraint stipulate that p facilities to be located.
+	\item (\ref{eq:pdsprsn_3}) minimum separation between the any pair of facility.
+	\item (\ref{eq:pdsprsn_4}) standard integrity constraint.
+\end{itemize}
+
+\textit{p-dispertion} problem again is that \textit{NP-hard} problem. (Prkopyev, Kong, and Martinez-Torres, 2008) introduce \textit{equitable dispersion} problem which is element based equity-oriented measure in dispersion problem in the dispersion context also be \textit{NP-Hard} problem.
+
+
+\subsection{Total or Avarage Distance Model}
+Many facility location planning situations in the public and private sections are concerned with the total travel distance between \textit{facilities} and \textit{demand} nodes. This approach may be viewed as an \textit{efficiency} objective as opposed to the \textit{equity} objective of minimizing the maximum distance, which was mentioned earlier.
+
+
+\subsubsection{P-median Problem}
+\label{p_median_def}
+
+\paragraph{Objective}
+One classic model in this area is the p-median model (Hakimi, 1964, 1965) which finds the locations of $p$ facilities to minimize the demand-weighted total distance between demand nodes  and the facilities to which they are assigned. p-median problem, the problem of locating $p$ \textit{facilities} relative to a set of \textit{demands} such that the sum of the shortest demand weighted distance between \textit{demand} and \textit{facilities} is minimized.
+\\
+Solving this problem, is \textit{non-trivial}. To see this, consider that the number of possible solutions to any given instance of a \textit{p-median} problem is 
+\\
+${N \choose P}$ = $\frac{N!}{N!(N-P)!}$
+\\
+where $N$ is the number of \textit{demands} and $p$ is the number of \textit{facilities} to be located.
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$p$= Number of facility to be locate \newline
+$d_{ij}$= Distance between the demand node $i$ and candidate location node $j$ \newline
+$h_i$ = Demand at node $i$ \newline
+\\
+The decision variables are \newline
+$x_j$ = 1, if locate at candidate site $j$ \newline	
+			= 0, if not
+\\
+$y_{ij}$ = 1, if demand $i$ is served by facility $j$ \newline
+			= 0, if not
+
+\paragraph{Formulation of Problem}
+p-center problem can be formulated as
+\\
+\begin{flushleft}
+	
+	\begin{equation}
+	\label{eq:pmedian_1}
+				Maximize \sum_{i \in I} \sum_{i \in J} h_i d_{ij} y_{ij}
+	\end{equation}
+	
+	subject to:		
+	\\
+	\begin{equation}
+	\label{eq:pmedian_2}
+			\sum_{j\in J}x_j = p 
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pmedian_3}
+			\sum_{j\in J}y_{ij} = 1 \forall i \in I 
+	\end{equation}
+		
+	\begin{equation}
+	\label{eq:pmedian_4}
+			y_{ij} - x_j \leq = 0 \forall i \in I, \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pmedian_5}
+			x_j \in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:pmedian_6}
+		  y_{ij} \in \left\{0, 1\right\} \forall i \in I, \forall j \in J
+	\end{equation}
+		
+\end{flushleft}
+
+The objective function 
+\begin{itemize}
+	\item objective function(\ref{eq:pmedian_1}) minimizes the total demand-weighted distance between each \textit{demand} and the nearest \textit{facility}. The constraints insure that the various properties of the problem are enforced. Specifically: 
+	\item (\ref{eq:pmedian_2}) requires that each customer is assigned to exactly one facility.
+	\item (\ref{eq:pmedian_3}) requires that exactly P facilities are located
+	\item (\ref{eq:pmedian_4}) link the location variables and the allocation variables
+	\item (\ref{eq:pmedian_5}) and(\ref{eq:pmedian_6}) insure that the location variables(X) and allocation variables(Y) are binary
+\end{itemize}
+Like the \textit{p-center} problem, the \textit{p-median} problem can be solved in polynomial time for fixed values of $p$, but is \textit{NP-hard} for variable values of $p$ (Garey and Johnson, 1979).
+
+\subsubsection{Fixed Charge Location Problem (FCLP)}
+\label{fclp_def}
+
+\paragraph{Objective}
+FCLP is a derivation of p-median problem. In p-median problem The p-median problem makes three important assumptions that may not be appropriate for certain siting scenarios. First, it assumes that each potential site has the same fixed costs for locating a facility at it. Secondly, it assumes that the facilities being sited do not have capacities on the demand that they can serve. In the parlance of the literature, it is an uncapacitated problem. Finally, it also assumes that one knows, a priori, how many facilities should be opened. 
+\\
+The objective of the model is to determine (1) the number of distribution centers to establish, (2) their locations, (3) the sets of retailers that are assigned to each distribution center, and (4) the size and timing of orders for each facility so as to minimize
+
+\paragraph{Notation and Meaning}
+Used below notation to formulate the problem
+\\
+$f_j$= Fixed cost of locating a \textit{facility} at \textit{candidate site} $j$\newline
+$C_j$= Capacity of a \textit{facility} at \textit{candidate site} $j$\newline
+$\alpha$ = Cost per unit \textit{demand} per unit \textit{distance}\newline
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline	
+$p$= Number of facility to be locate \newline
+$d_{ij}$= Distance between the demand node $i$ and candidate location node $j$ \newline
+$h_i$ = Demand at node $i$ \newline
+\\
+The decision variables are \newline
+$x_j$ = 1, if locate at candidate site $j$ \newline	
+			= 0, if not
+\\
+$y_{ij}$ = 1, if demand $i$ is served by facility $j$ \newline
+			= 0, if not
+			
+\paragraph{Formulation of Problem}
+FCLP objective function can be defined as follows
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:fclp_1}
+				Maximize \sum_{j \in J}f_j x_j + \sum_{i \in I} \sum_{i \in J} h_i d_{ij} y_{ij}
+	\end{equation}
+	
+	subject to:		
+	
+	\begin{equation}
+	\label{eq:fclp_2}
+			\sum_{j\in J}y_{ij} = 1 \forall i \in I 
+	\end{equation}
+		
+	\begin{equation}
+	\label{eq:fclp_3}
+			y_{ij} - x_j \leq = 0 \forall i \in I, \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:fclp_4}
+			\sum_{j \in J} h_i y_{ij} - C_jx_j \leq 0 \forall i \in I
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:fclp_5}
+			x_j \in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:fclp_6}
+		  y_{ij} \in \left\{0, 1\right\} \forall i \in I, \forall j \in J
+	\end{equation}
+		
+\end{flushleft}
+\begin{itemize}
+	\item the objective function(\ref{eq:fclp_1}) minimizes the sum of the fixed facility location costs and the total travel costs for demand to be served
+	\item the second set of terms in (\ref{eq:fclp_2}) is often referred to as demand-weighted distance
+	\item constraints (\ref{eq:fclp_4}) prohibits the total demand assigned to a facility from exceeding the capacity of the facility, $c_j$
+	\item constraint sets (\ref{eq:fclp_2}), (\ref{eq:fclp_3}), (\ref{eq:fclp_4}) and (\ref{eq:fclp_6}) function as similar constraint sets in the previous problems
+	\item relaxing constraint set (\ref{eq:fclp_6})  allows demand at a node to be assigned (partially) to multiple facilities. We also note that constraint(\ref{eq:fclp_3}) is not needed in this integer programming formulation since constraint set (\ref{eq:fclp_4}) will also force demands to be assigned only to open facilities.
+	\item however, including constraint set (\ref{eq:fclp_3}) in the formulation significantly strengthens the linear programming relaxation of the model
+\end{itemize}
+
+It's also an \textit{NP-Hard} problem.
+
+
+\subsubsection{Hub Location Problem}
+\label{hub_location_def}
+
+\paragraph{Objective}
+Minimizes the sum of the cost of moving items between a non-hub node (\textit{origin} and \textit{destination}) and the hub to which the node is assigned, the cost of moving from the final hub to the destination of the flow, and the inter-hub movement cost(O'Kelly, 1987).
+
+\paragraph{Notation and Meaning}
+The basic \textit{p-hub} location model can be formulated using the following notation inputs.
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline
+$h_{ij}$= Number of units of flow between nodes $i$ and $j$	
+$c_{ij}$= unit cost of transportation between nodes $i$ and $j$\newline
+$\alpha$= Discount factor for transport between hubs\newline
+\\
+The decision variables are \newline
+$x_j$ = 1, if a hub located at $j$ \newline	
+			= 0, if not
+\\
+$y_{ij}$ = 1, if demand at node $i$ are assigned to a hub located at node $j$ \newline
+			= 0, if not
+
+\paragraph{Formulation of Problem}
+The Hub location problem can be defined as follows
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:hub_1}
+				Minimize \sum_{i \in N} \sum_{i \in N} h_{ij} \left( \sum_{k \in N}c_{ik}y_{ik} + \sum_{m \in N} c_{jm}y_{jm} + \alpha \sum_{k \in N} \sum_{k \in N}  c_{km}y_{ik}y_{jm} \right)
+	\end{equation}
+	
+	subject to:		
+	
+	\begin{equation}
+	\label{eq:hub_2}
+			\sum_{j\in J}x_j = p 
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:hub_3}
+			\sum_{j\in J}y_{ij} = 1 \forall i \in I 
+	\end{equation}
+		
+	\begin{equation}
+	\label{eq:hub_4}
+			y_{ij} - x_j \leq = 0 \forall i \in I, \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:hub_5}
+			x_j \in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:hub_6}
+		  y_{ij} \in \left\{0, 1\right\} \forall i \in I, \forall j \in J
+	\end{equation}
+\end{flushleft}
+
+\begin{itemize}
+	\item the objective function(\ref{eq:hub_1}) minimizes the sum of the cost of moving items between a non-hub node and the hub to which the node is assigned, the cost of moving from the final hub to the destination of the flow, and the interhub movement cost which is discounted by a factor of $\alpha$
+	\item the model assumes that the hub portion of the network is a complete graph and therefore flows between any pair of nodes $i$ and $j$ will pass through at most two different hub nodes
+	\item constraints(\ref{eq:hub_2}) through(\ref{eq:hub_6}) are identical to constraints (\ref{eq:pmedian_2}) through (\ref{eq:pmedian_6}) for the \textit{p-median} model above
+	\item in particular, constraints(\ref{eq:hub_3}) stipulate that each node should be assigned to exactly one hub. In practical contexts, it may be valuable to relax this constraint and to allow flows from particularly large nodes to be served directly by two or more hub nodes
+\end{itemize}
+
+In classical discrete facility location problem demands for service occur at the discrete points, facilitate are located at discrete points and the objective are generally distance or cost between the facility and demand points. But in hub location problem demand is specified as flows between many origin and many destination , and hub facilities serve as switching and consolidation points for the orgin and destination flows.
+\\
+To model the basic hub location problem we define three sets of decision variables based on the flow. Each set of decision variables based on individual component. Hub can be single or multiple. If single Hub is present into the network then the origin and destination is single arc if multiple Hub presents then transfer component involved into the several arc. If transfer component does not exists then the origin destination path is 
+
+
+FIGURE1\\
+If the transfer component inside the hub exists then the origin and destination path will be.\\
+FIGURE2\\
+
+
+The below decession variables are used to define the hub location problems
+\\
+$z_{ik}$ = flow from origin $i$ to hub $k$ \newline
+$y_{kl}$ = flow from hub $k$ to hub $l$ that originates at origin $i$ \newline
+$x_{ij}$ = flow from hub $l$ to destination $j$ that originates at origin $i$ \newline \newline
+
+Various types of Hub Location problem are stated below \newline
+\begin{itemize}
+	\item Uncapacitated multiple allocation p-hub median problems (p-hub/DA/MA/./$\sum_{flow}$).
+	\item Uncapacitated single allocation p-hub median problems (p-hub/DA/SA/./$\sum_{flow}$).
+	\item Uncapacitated multiple allocation hub location problems (hub/DA/MA/./$\sum_{flow} + \sum_{hub}$).
+	\item Uncapacitated single allocation hub location problems (hub/DA/SA/./$\sum_{flow} + \sum_{hub}$).
+\end{itemize}
+
+
+\subsubsection{Maxisum Location Problem}
+\label{maxisum_def}
+
+\paragraph{Objective}
+The average distance models discussed above assume that locating facilities as close as possible to demands is desirable. For many facilities this is the case. However, for undesirable facilities (e.g., prisons, power plants, and solid waste repositories) at least one objective involves locating facilities far from demand nodes. The maxisum location problem seeks the locations of $p$ facilities such that the total demand-weighted distance between demand nodes and the facilities to which they are assigned is maximized.
+
+\paragraph{Notation and Meaning}
+Following notation inputs are used to formulate the maxisum Location Problem
+\\
+$I$= Set of all demand nodes $i \in I$ \newline	
+$J$= Set of all candidate site $j \in J$ \newline
+$h_{ij}$= Number of units of flow between nodes $i$ and $j$	
+$c_{ij}$= unit cost of transportation between nodes $i$ and $j$\newline
+\\
+The decision variables are \newline
+$x_j$ = 1, if a hub located at $j$ \newline	
+			= 0, if not
+\\
+$y_{ij}$ = 1, if demand at node $i$ are assigned to a hub located at node $j$ \newline
+			= 0, if not
+
+\paragraph{Formulation of Problem}
+The objective function of maxisum loction problem can be defined as
+\\
+\begin{flushleft}
+	\begin{equation}
+	\label{eq:maxisum_1}
+				Maximize \sum_{i \in I} \sum_{i \in J} h_i d_{ij} y_{ij}
+	\end{equation}
+	
+	subject to:		
+	
+	\begin{equation}
+	\label{eq:maxisum_2}
+			\sum_{j\in J}x_j = p 
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:maxisum_3}
+			\sum_{j\in J}y_{ij} = 1 \forall i \in I 
+	\end{equation}
+		
+	\begin{equation}
+	\label{eq:maxisum_4}
+			y_{ij} - x_j \leq = 0 \forall i \in I, \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:maxisum_5}
+			\sum_{k=1}^m {y_i}_{[k]_i} - x_{[m]_i} \geq 0 \forall i \in I, m=1, \cdot\cdot\cdot, N-1
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:maxisum_6}
+			x_j \in \left\{0, 1\right\} \forall j \in J
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:maxisum_7}
+		  y_{ij} \in \left\{0, 1\right\} \forall i \in I, \forall j \in J
+	\end{equation}
+		
+\end{flushleft}
+
+This formulation is identical to that of the \textit{p-median} problem with two notable exceptions. First, the objective(~\ref{eq:maxisum_1}) is to maximize the demand weighted total distance and not to minimize it. The unfortunate impact of this objective is that it forces demands to be assigned to the most remote facility. Thus, the formulation has been extended with constraint(~\ref{eq:maxisum_5}) , which ensures that demands are assigned to the nearest facility. In this constraint, $[k]_i$ is the index of the $k^{th}$ farthest candidate location from demand node  Constraint(~\ref{eq:maxisum_5}) then states that if the $m^{th}$ closest facility to demand node $i$ is opened then demand node $i$ must be assigned to that facility or to a closer facility $i$.
+
+\subsection{Anatomy of Facility Location Model}
+Facility location models can be classified according to their objectives, constraints, solutions, and Other attributes. There have been several factors which classify different type of facility location problem. Below are the several anatomies, by which we classify the facility location problem(jia2005).
+
+\paragraph{Topological characteristics}
+Topological characteristics of the facility and demand sites lead to different location models, Plastria discuss continuous location models in mid of 80's, discrete network models proposed by daskin and in late 1990 campbel discuss hub connection models,  etc. each of these models, facilities can only be placed at the sites where it is allowed by  topographic conditions.
+
+\paragraph{Objective }
+The objective is an important criterion to classify the location models. Objective function either will be minimized or maximized. There are several model discuss in the literature of FLP by considering either minimize the objective function or maximized the objective function or by combine the both.  Covering models aim to minimize the facility quantity while providing coverage to all demand nodes or maximize the coverage provided the facility quantity is pre-specified.  P-center models have an objective to minimize the maximum distance (or travel time) between the demand nodes and the facilities. In competitive facility location model private sector companies used p-center model to maximize the profit.
+
+\paragraph{Solution methods}
+Most of the facility location problem is non linear convex objective function. Optimization models use mathematical approaches such as linear programming or integer programming to seek alternative solutions which trade off the most important objectives against one another.  Generally facility location problem is NP-Hard problem whenever the solution derives from traditional mathematical approach
+
+\paragraph{Features of facilities}
+Several features is considered to define the facility location problem like desirability, capacity, etc. The objective function of the FLP is based upon the application areas of the problem.
+
+\paragraph{Demand patterns }
+Location models can also be classified based on the demand patterns. If the mentioned model is elastic where the demand depends upon seasonal, demographic, living standards, etc.
+
+\paragraph{Supply Pattern }
+For several problem it might seems that FLP is depend based upon the supply characteristics of supply node. Supply might be in single point for a single demand or for a single demand can be split in several sub demands and being facilitated from different supply node.
+
+\paragraph{Supply chain type}
+Location models can be further divided by the type of supply chain considered (i.e. single-stage model vs. multi-stage model). Single-stage models focus on service distribution systems with only one stage, whereas multi-stage models consider the flow of service through several hierarchical levels.
+
+\paragraph{Input parameters}
+In some of the cases FLP being classified based upon the feature of input parameter to the problem. (daskin1998). In realistic problem input parameter is unknown and either stochastic or probabilistic in nature. 
+\\
+\\
+Facility location problem can be classified based upon the problem context like basic FLP, p-median, fixed charge, etc. (korupolu2000) discuss how based upon the caracteristics of the problem context, capacity and nature of the distribution in supply node problem domain being classified from one problem context to another. \newline \newline
+
+------------------------------------------START (TO BE COMPELTED)-----------------------------------------------
+$N=1, . . . , n$ be a set of locations and F Subset N be a set of locations at which we may open a facility.
+Each location j in N has a demand dj that must shipped to j.
+Cij is the cost for shipping a unit of product from location I to j.
+
+"	The uncapacitatedk-median problem (UKM),
+"	The uncapacitated facility location problem (UFL).
+"	The capacitatedk-median problem with unsplittable demands (CKMU)
+"	The capacitated facility location problem with unsplittable demands (CFLU)
+"	The capacitatedk-median problem with splittable demands (CKMS)
+"	The capacitated facility location problem with splittable demands (CFLS)
+"	Un-capacitated fixed charge problem 
+"	capacitated fixed charge problem
+
+In assigning the demand of customers to stores, there are two natural variations to consider: 
+i.	the demand of a customer must be met by a single store(unsplittable demands), 
+ii.	the demand of a customer may be divided across any number of stores (splittable demands)
+
+N={1, . . . , n} be a set of locations and F Subset N be a set of locations at which we may open a facility.
+Each location j in N has a demand dj that must shipped to j.
+Cij is the cost for shipping a unit of product from location I to j.
+
+
+A.	The uncapacitatedk-median problem (UKM)
+Problem Context: Find out the set of at most k open facilities and locate the facility such that the shipping cost of the solution would be minimized. any solution to UKM is completely characterized by the set of open facilities.
+
+Mathematical Formulation: In this problem Let say S is the set of open facility where S subset of N and an assignment delta: N->S is given by SUM(j belongs to N : dj*cjlamda(j)).  Given a set S of open facilities, an assignment that minimizes the shipping cost may be obtained by assigning each location j in N to the closest open facility in S.
+
+B.	The uncapacitated facility location problem (UFL). 
+Problem Context: Determine a set of open facilities and an assignment of locations to facilities such that the sum of the cost of opening the facilities and the shipping cost is minimized.
+Mathematical Formulation:
+a set S of open facilities, an assignment that minimizes the total cost is to assign each location j in N to the closest open facility in S. Therefore, any solution to this problem is characterized by the set of open facilities. Given any solution S of open facilities, we let Cs(S).,Cf(S)., and C(S). denote the shipping cost, the facility cost, and the total cost, respectively, obtained by assigning each location to its closest open facility. 
+
+C.	The capacitated problem
+Problem Context:
+In this problem there is a bound M on the total demand that can be shipped from any facility. The capacitated variants are defined in the same manner as the uncapacitated variants except that any solution must satisfy the additional constraint imposed by the capacity M.
+
+Mathematical Formulation:
+A solutions given by S facilities and an assignment operator theta is feasible only if the capacity constraints are respected at all the facilities S. It might be happened that multiple facility can be open in a single location for satisfy the demand.
+
+
+D.	The capacitated  problem with splittable demands
+Problem Context:
+There are two natural variants of capacitated location problems: 
+i.	splittable demands, where the demand of each location can be split across
+more than one facility, and Ž
+ii.	unsplittable demands, where the demand of each location has to be shipped from a single facility.
+
+
+Mathematical Formulation:
+For the capacitated problems with splittable demands (that is, CKMS and CFLS), given a set S of open facilities, an assignment is given by a function theta : N->S =>R,
+wheretheta(j, i). denotes the amount of demand shipped from facility i to location j. For the capacitated problems with unsplittable demands (that is, CKMU and CFLU), an assignment is given by a function theta : N->S, as in the uncapacitated problems.
+----------------------------------END -------------------------------------------------------
+
+\afterpage{\clearpage}
+
+% BibTeX users please use one of
+\bibliographystyle{plain}      % basic style, author-year citations
+
+\bibliography{}   % name your BibTeX data base
+
+\end{document}

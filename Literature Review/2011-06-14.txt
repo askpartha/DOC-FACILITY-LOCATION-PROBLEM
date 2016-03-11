@@ -1,0 +1,434 @@
+******************************
+
+Tuy H., Minoux M., Hoai Phuong N.T.,
+Discrete monotonic optimization with applications to a discrete location problem SIAM Journal on Optimization 17 (2006) 78-97
+******************************
+
+Now We Are Talking Trash
+Christopher Cullenbine and Jennifer Van Dinter INTERFACES 2010;40 451-453 http://interfaces.journal.informs.org/cgi/content/abstract/40/6/451?etoc
+
+
+
+
+
+******************************
+Optimal Location of Facilities on a Network in Which Each Facility is Operating as an M/G/1 Queue Tomoki Hamaguchi, Koichi Nakade
+
+Journal of Service Science and Management, Volume 03, Number 03(Sep. 2010), PP.287-297
+DOI: 10.4236/jssm.2010.33036
+http://www.scirp.org/Journal/PaperDownload.aspx?FileName=JSSM20100300010_23383848.pdf&paperID=2745
+******************************
+
+  Lise Tole and Gary Koop
+        Do environmental regulations affect the location decisions of
+        multinational gold mining firms?
+        J Econ Geogr 2011 11: 151-177; doi:10.1093/jeg/lbp064.
+        http://joeg.oxfordjournals.org/cgi/content/abstract/11/1/151?etoc
+
+******************************
+Line facility location in weighted regions Yam Ki Cheung and Ovidiu Daescu Journal of Combinatorial Optimization Volume 22, Number 1, 52-70, DOI: 10.1007/s10878-009-9272-3
+
+******************************
+Zhao, W. & Posner, M.
+A large class of facets for the K-median polytope Mathematical Programming, Springer Berlin / Heidelberg, 2011, 128, 171-203
+
+******************************
+Puerto, J. & Rodriguez-Chia, A.
+On the structure of the solution set for the single facility location problem with average distances Mathematical Programming, Springer Berlin / Heidelberg, 2011, 128, 373-401
+******************************
+Mallozzi, L.
+Cooperative games in facility location situations with regional fixed costs Optimization Letters, Springer Berlin / Heidelberg, 2011, 5, 173-181
+
+******************************
+Seyed Abbas Taher, Ali Karimian, Mohammad Hasani, A new method for optimal location and sizing of capacitors in distorted distribution networks using PSO algorithm, Simulation Modelling Practice and Theory, Volume 19, Issue 2, February 2011, Pages 662-672, ISSN 1569-190X, DOI: 10.1016/j.simpat.2010.09.001.
+(http://www.sciencedirect.com/science/article/pii/S1569190X10001917)
+Keywords: Capacitor banks; PSO algorithm; Harmonic; Placement; Harmonic power flow; Non-linear load; Optimization; Power
+
+quality (PQ); Sizing
+
+******************************
+Ali Reza Mehrabian, Aghil Yousefi-Koma,
+A novel technique for optimal placement of piezoelectric actuators on smart structures, Journal of the Franklin Institute, Volume 348, Issue 1, Mechatronics and its Applications, February 2011, Pages 12-23, ISSN 0016-0032, DOI: 10.1016/j.jfranklin.2009.02.006.
+(http://www.sciencedirect.com/science/article/pii/S0016003209000295)
+Keywords: Smart structures; Vibration control; Neural networks; Optimization; Invasive weed optimization
+
+
+******************************
+Alfredo Marin,
+The discrete facility location problem with balanced allocation of customers, European Journal of Operational Research, Volume 210, Issue 1, 1 April 2011, Pages 27-38, ISSN 0377-2217, DOI: 10.1016/j.ejor.2010.10.012.
+(http://www.sciencedirect.com/science/article/pii/S0377221710006533)
+Keywords: Allocation; Facility location; Integer Programming; Branch-and-cut
+
+******************************
+S.E. Terblanche, R. Wessaly, J.M. Hattingh, Survivable network design with demand uncertainty, European Journal of Operational
+
+Research, Volume 210, Issue 1, 1 April 2011, Pages 10-26, ISSN 0377-2217, DOI: 10.1016/j.ejor.2010.09.041.
+(http://www.sciencedirect.com/science/article/pii/S0377221710006399)
+Keywords: Integer programming; Stochastic programming; Robust optimization; Telecommunication
+
+
+******************************
+Maria Albareda-Sambola, Elena Fernandez, Gilbert Laporte, A computational comparison of several models for the exact solution of the capacity and distance constrained plant location
+
+problem,
+Computers & Operations Research, Volume 38, Issue 8, August 2011, Pages 1109-1116, ISSN 0305-0548, DOI:
+
+10.1016/j.cor.2010.10.030.
+(http://www.sciencedirect.com/science/article/pii/S0305054810002613)
+Keywords: Discrete location
+
+******************************
+A bilevel model for preventive healthcare facility network design with congestion Yue Zhang; Oded Berman; Patrice Marcotte; Vedat Verter IIE Transactions Volume 42, Issue 12, 2010, Pages 865 - 880
+DOI: 10.1080/0740817X.2010.491500
+
+******************************
+Youngjin Kim, Youngho Lee, Junghee Han,
+A splitter location-allocation problem in designing fiber optic access networks, European Journal of Operational Research, Volume 210, Issue 2, 16 April 2011, Pages 425-435, ISSN 0377-2217, DOI:
+
+10.1016/j.ejor.2010.10.003.
+(http://www.sciencedirect.com/science/article/pii/S0377221710006442)
+Keywords: OR in telecommunications; FTTH-PON; Access network design; Optimization; Local search
+
+******************************
+Rafay Ishfaq, Charles R. Sox,
+Hub location-allocation in intermodal logistic networks, European Journal of Operational Research, Volume 210, Issue 2, 16 April 2011, Pages 213-230, ISSN 0377-2217, DOI:
+
+10.1016/j.ejor.2010.09.017.
+(http://www.sciencedirect.com/science/article/pii/S0377221710006156)
+Keywords: Logistics; Intermodal; Transportation; Hub networks
+
+******************************
+Caroline Prodhon,
+A hybrid evolutionary algorithm for the periodic location-routing problem, European Journal of Operational Research, Volume 210, Issue 2, 16 April 2011, Pages 204-212, ISSN 0377-2217, DOI:
+
+10.1016/j.ejor.2010.09.021.
+(http://www.sciencedirect.com/science/article/pii/S0377221710006193)
+Keywords: Location; Routing; Periodic; Metaheuristics; Evolutionary computations
+
+******************************
+Federico Liberatore, Maria P. Scaparra, Mark S. Daskin, Hedging against disruptions with ripple effects in location analysis, Omega, Volume 40, Issue 1, January 2012, Pages 21-30, ISSN 0305-0483, DOI: 10.1016/j.omega.2011.03.003.
+(http://www.sciencedirect.com/science/article/pii/S0305048311000533)
+Keywords: Location; Integer programming; Optimization; Computing
+******************************
+Juana L. Redondo, Jose Fernandez, Aranzazu G. Arrondo, Inmaculada Garcia, Pilar M. Ortigosa, Fixed or variable demand? Does it matter when locating a facility?, Omega, Volume 40, Issue 1, January 2012, Pages 9-20, ISSN 0305-0483, DOI: 10.1016/j.omega.2011.02.007.
+(http://www.sciencedirect.com/science/article/pii/S0305048311000375)
+Keywords: Location; Deterministic demand; Decision making; Heuristics; Evolutionary algorithm; Branch and bound
+******************************
+Atlas F. Cook IV, Carola Wenk,
+Link distance and shortest path problems in the plane, Computational Geometry, Volume 44, Issue 8, October 2011, Pages 442-455, ISSN 0925-7721, DOI: 10.1016/j.comgeo.2011.04.004.
+(http://www.sciencedirect.com/science/article/pii/S0925772111000307)
+Keywords: Shortest paths; Link distance; Simple polygon; Polygonal domain
+******************************
+Derek J. Clark, Finn Jorgensen, Terje Andreas Mathisen, Relationships between fares, trip length and market competition, Transportation Research Part A: Policy and Practice, Volume 45, Issue 7, August 2011, Pages 611-624, ISSN 0965-8564, DOI: 10.1016/j.tra.2011.03.012.
+(http://www.sciencedirect.com/science/article/pii/S0965856411000589)
+Keywords: Optimal fares; Trip length; Competitive situation
+
+******************************
+S.M.H. Manzour-al-Ajdad, S.A. Torabi, S. Salhi, A hierarchical algorithm for the planar single-facility location routing problem, Computers & Operations Research, Volume 39, Issue 2, February 2012, Pages 461-470, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.05.013.
+(http://www.sciencedirect.com/science/article/pii/S0305054811001377)
+Keywords: Location routing problem; Weber problem; Heuristics; Logistics
+******************************
+Hande Kucukaydin, Necati Aras, I. Kuban Altinel, A leader-follower game in competitive facility location, Computers & Operations Research, Volume 39, Issue 2, February 2012, Pages 437-448, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.05.007.
+(http://www.sciencedirect.com/science/article/pii/S0305054811001316)
+Keywords: Competitive facility location; Leader-follower game; Mixed-integer nonlinear programming; Hybrid tabu search
+
+heuristic
+******************************
+M. Hakan Akyuz, Temel Oncan, I. Kuban Altinel, Efficient approximate solution methods for the multi-commodity capacitated multi-facility Weber problem, Computers & Operations Research, Volume 39, Issue 2, February 2012, Pages 225-237, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.03.015.
+(http://www.sciencedirect.com/science/article/pii/S0305054811000888)
+Keywords: Location-allocation; Multi-commodity transportation problem; Heuristics
+
+******************************
+Isabel Correia, Stefan Nickel, Francisco Saldanha-da-Gama, Hub and spoke network design with single-assignment, capacity decisions and balancing requirements, Applied Mathematical Modelling, Volume 35, Issue 10, October 2011, Pages 4841-4851, ISSN 0307-904X, DOI: 10.1016/j.apm.2011.03.046.
+(http://www.sciencedirect.com/science/article/pii/S0307904X1100206X)
+Keywords: Hub and spoke network design; Balancing requirements; Capacity choice; Single-allocation
+
+******************************
+J.M. Diaz-Banez, M. Heredia, B. Pelegrin, P. Perez-Lantero, I. Ventura, Finding all pure strategy Nash equilibria in a planar location game, European Journal of Operational Research, Volume 214, Issue 1, 1 October 2011, Pages 91-98, ISSN 0377-2217, DOI: 10.1016/j.ejor.2011.04.003.
+(http://www.sciencedirect.com/science/article/pii/S0377221711003134)
+Keywords: Location; Game theory; Nash equilibrium
+******************************
+A competitive location model to obtain a specific market share while ranking facilities by shorter travel time
+
+Naeme Zarrinpoor and Mehdi Seifbarghy
+The International Journal of Advanced Manufacturing Technology Volume 55, Numbers 5-8, 807-816, 2011, DOI: 10.1007/s00170-010-3098-0
+
+******************************
+Andrea Bottino, Aldo Laurentini,
+A nearly optimal algorithm for covering the interior of an Art Gallery, Pattern Recognition, Volume 44, Issue 5, May 2011, Pages 1048-1056, ISSN 0031-3203, DOI: 10.1016/j.patcog.2010.11.010.
+(http://www.sciencedirect.com/science/article/pii/S0031320310005376)
+Keywords: Art Gallery; Visual sensor positioning; Internal covering
+
+******************************
+Locating workstations in tandem automated guided vehicle systems
+
+Amir Salehipour, Hamed Kazemipoor and Leila Moslemi Naeini The International Journal of Advanced Manufacturing Technology Volume 52, Numbers 1-4, 321-328, 2011, DOI: 10.1007/s00170-010-2727-y
+
+******************************
+M. Elena Saiz, Eligius M.T. Hendrix, Blas Pelegrin, On Nash equilibria of a competitive location-design problem, European Journal of Operational Research, Volume 210, Issue 3, 1 May 2011, Pages 588-593, ISSN 0377-2217, DOI: 10.1016/j.ejor.2010.09.036.
+(http://www.sciencedirect.com/science/article/pii/S037722171000634X)
+Keywords: Game theory; Global optimisation; Huff model; Location; Nash equilibrium
+
+******************************
+J. Martin, G. Mayor,
+Multi-argument distances,
+Fuzzy Sets and Systems, Volume 167, Issue 1, Special Issue: Aggregation techniques and applications Selected papers from
+
+AGOP'2009 dedicated to Jaume Casasnovas, 30 March 2011, Pages 92-100, ISSN 0165-0114, DOI: 10.1016/j.fss.2010.10.018.
+(http://www.sciencedirect.com/science/article/pii/S0165011410004495)
+Keywords: Distance; Multidistance; Fermat point; Sum-based multidistance; OWA operator
+
+******************************
+
+Applications of Variational Analysis to a Generalized Fermat-Torricelli Problem
+
+Boris Mordukhovich and Nguyen Mau Nam
+Journal of Optimization Theory and Applications Volume 148, Number 3, 431-454, 2011, DOI: 10.1007/s10957-010-9761-7
+
+******************************
+Oded Berman, Dmitry Krass,
+On n-facility median problem with facilities subject to failure facing uniform demand, Discrete Applied Mathematics, Volume 159, Issue 6, 28 March 2011, Pages 420-432, ISSN 0166-218X, DOI: 10.1016/j.dam.2010.11.021.
+(http://www.sciencedirect.com/science/article/pii/S0166218X1000404X)
+Keywords: p-median; Reliability; Continuous location models
+
+******************************
+Economists as geographers and geographers as something else:
+on the changing conception of distance in geography and economics
+
+    Andrés Rodríguez-Pose
+J Econ Geogr (2011) 11 (2): 347-356. doi: 10.1093/jeg/lbq034
+******************************
+S. Durocher, K.R. Jampani, A. Lubiw, L. Narayanan, Modelling gateway placement in wireless networks: Geometric k-centres of unit disc graphs, Computational Geometry, Volume 44, Issue 5, July 2011, Pages 286-302, ISSN 0925-7721, DOI: 10.1016/j.comgeo.2010.12.003.
+(http://www.sciencedirect.com/science/article/pii/S092577211000101X)
+Keywords: Unit disc graph; k-Centre; Intersection graph; Facility location; Wireless networks
+
+******************************
+Ismail Karaoglan, Fulya Altiparmak, Imdat Kara, Berna Dengiz, A branch and cut algorithm for the location-routing problem with simultaneous pickup and delivery, European Journal of Operational Research, Volume 211, Issue 2, 1 June 2011, Pages 318-332, ISSN 0377-2217, DOI: 10.1016/j.ejor.2011.01.003.
+(http://www.sciencedirect.com/science/article/pii/S0377221711000063)
+Keywords: Logistics; Location-routing problem; Simultaneous pickup and delivery; Branch-and-cut; Simulated annealing
+
+
+******************************
+Finding multiple global optima for unconstrained discrete location problems J. L. Redondo; B. Pelegrin; P. Fernandez; I. Garcia; P. M. Ortigosa Optimization Methods and Software Volume 26, Issue 2, First published 2011, Pages 207 - 224
+DOI: 10.1080/10556780903567760
+*****************************
+Kenichi Kanatani, Prasanna Rangarajan,
+Hyper least squares fitting of circles and ellipses, Computational Statistics & Data Analysis, Volume 55, Issue 6, 1 June 2011, Pages 2197-2208, ISSN 0167-9473, DOI: 10.1016/j.csda.2010.12.012.
+(http://www.sciencedirect.com/science/article/pii/S0167947310004809)
+Keywords: Least squares; Circle fitting; Ellipse fitting; Algebraic distance minimization; Error analysis; Bias removal
+
+******************************
+Kun Wei, Zhong-liang Jing, Yuan-xiang Li, Su-liang Liu, Spiral band model for locating Tropical Cyclone centers, Pattern Recognition Letters, Volume 32, Issue 6, 15 April 2011, Pages 761-770, ISSN 0167-8655, DOI: 10.1016/j.patrec.2010.12.011.
+(http://www.sciencedirect.com/science/article/pii/S0167865510004083)
+Keywords: Tropical Cyclone; Center locating; Spiral band model; Particle swarm optimization
+
+******************************
+Branch and Price for Large-Scale Capacitated Hub Location Problems with Single Assignment Ivan Contreras, Juan A. Diaz, and Elena Fernandez INFORMS JOURNAL ON COMPUTING 2011;23 41-55 http://joc.journal.informs.org/cgi/content/abstract/23/1/41?etoc
+
+******************************
+A Generalized Two-Agent Location Problem: Asymmetric Dynamics and Coordination
+
+Boaz Golany, Konstantin Kogan and Uriel G. Rothblum Journal of Optimization Theory and Applications Volume 148, Number 2, 336-363, 2011, DOI: 10.1007/s10957-010-9750-x
+
+******************************
+Adrian Dumitrescu, Minghui Jiang,
+Constrained k-center and movement to independence, Discrete Applied Mathematics, Volume 159, Issue 8, 28 April 2011, Pages 859-865, ISSN 0166-218X, DOI: 10.1016/j.dam.2011.01.008.
+(http://www.sciencedirect.com/science/article/pii/S0166218X11000205)
+Keywords: Computational geometry; Client-server problem; Independent set; Approximation algorithm; Fixed parameter tractable
+
+algorithm; Linear programming
+
+******************************
+Behrooz Alizadeh, Rainer E. Burkard,
+Uniform-cost inverse absolute and vertex center location problems with edge length variations on trees, Discrete Applied Mathematics, Volume 159, Issue 8, 28 April 2011, Pages 706-716, ISSN 0166-218X, DOI: 10.1016/j.dam.2011.01.009.
+(http://www.sciencedirect.com/science/article/pii/S0166218X11000217)
+Keywords: Facility location problem; Inverse optimization; Combinatorial optimization; Absolute and vertex 1-centers
+
+******************************
+An application of possibilistic programming to the fuzzy location–allocation problems
+
+Mohammad Bagher Abiri and Amir Yousefli
+The International Journal of Advanced Manufacturing Technology Volume 53, Numbers 9-12, 1239-1245, 2011
+DOI: 10.1007/s00170-010-2896-8
+
+******************************
+Solving Nonlinear Covering Problems Arising in WLAN Design Edoardo Amaldi, Sandro Bosio, Federico Malucelli, Di Yuan OPERATIONS RESEARCH Vol. 59, No. 1, January-February 2011, pp. 173-187
+DOI: 10.1287/opre.1100.0897
+******************************
+Oded Berman, Dmitry Krass, Jiamin Wang,
+The probabilistic gradual covering location problem on a network with discrete random demand weights, Computers & Operations Research, Volume 38, Issue 11, November 2011, Pages 1493-1500, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.01.005.
+(http://www.sciencedirect.com/science/article/pii/S0305054811000098)
+Keywords: Location; Network; Covering; Probability; Optimization
+
+
+******************************
+Zhen Wang, Donglei Du, Adriana F. Gabor, Dachuan Xu, Erratum to: 'An approximation algorithm for the k-level stochastic facility location problem' [Oper. Res. Lett. 38 (2010)
+
+386-389],
+Operations Research Letters, Volume 39, Issue 2, March 2011, Pages 160-161, ISSN 0167-6377, DOI: 10.1016/j.orl.2010.12.001.
+(http://www.sciencedirect.com/science/article/pii/S0167637710001616)
+Keywords: Facility location; Approximation algorithm; Randomized rounding
+
+******************************
+Halit Uster, Homarjun Agrahari,
+A Benders decomposition approach for a distribution network design problem with consolidation and capacity considerations,  Operations Research Letters, Volume 39, Issue 2, March 2011, Pages 138-143, ISSN 0167-6377, DOI: 10.1016/j.orl.2011.02.003.
+(http://www.sciencedirect.com/science/article/pii/S0167637711000113)
+Keywords: Network design; Consolidation; Benders decomposition
+
+
+******************************
+New Genetic Algorithms Based Approaches to Continuous p-Median Problem
+
+M. N. Neema, K. M. Maniruzzaman and A. Ohgai Networks and Spatial Economics Volume 11, Number 1, 83-99, 2011
+DOI: 10.1007/s11067-008-9084-5
+
+******************************
+Henry Martyn Mulder, Beth Novick,
+An axiomatization of the median procedure on the n-cube, Discrete Applied Mathematics, Volume 159, Issue 9, 6 June 2011, Pages 939-944, ISSN 0166-218X, DOI: 10.1016/j.dam.2011.02.001.
+(http://www.sciencedirect.com/science/article/pii/S0166218X11000515)
+Keywords: Median; Median function; Hypercube; Location function; Consensus axiom
+
+
+******************************
+A. Kokangul, A. Ari,
+Optimization of passive optical network planning, Applied Mathematical Modelling, Volume 35, Issue 7, July 2011, Pages 3345-3354, ISSN 0307-904X, DOI: 10.1016/j.apm.2011.01.017.
+(http://www.sciencedirect.com/science/article/pii/S0307904X11000308)
+Keywords: Optimization; Genetic algorithm (GA); Passive optical network (PON)
+
+
+******************************
+Li Yan, Marek Chrobak,
+Approximation algorithms for the Fault-Tolerant Facility Placement problem, Information Processing Letters, Volume 111, Issue 11, 15 May 2011, Pages 545-549, ISSN 0020-0190, DOI: 10.1016/j.ipl.2011.03.005.
+(http://www.sciencedirect.com/science/article/pii/S0020019011000688)
+Keywords: Approximation algorithms
+
+
+******************************
+Seyed Abbas Taher, Muhammad Karim Amooshahi, Optimal placement of UPFC in power systems using immune algorithm, Simulation Modelling Practice and Theory, Volume 19, Issue 5, May 2011, Pages 1399-1412, ISSN 1569-190X, DOI: 10.1016/j.simpat.2011.03.001.
+(http://www.sciencedirect.com/science/article/pii/S1569190X11000414)
+Keywords: Optimal power flow (OPF); Immune algorithm (IA); Optimal location; Unified power flow controller (UPFC); Congestion
+
+management
+
+
+******************************
+Guowei Hua, T.C.E. Cheng, Shouyang Wang, The maximum capture per unit cost location problem, International Journal of Production Economics, Volume 131, Issue 2, June 2011, Pages 568-574, ISSN 0925-5273, DOI: 10.1016/j.ijpe.2011.02.002.
+(http://www.sciencedirect.com/science/article/pii/S0925527311000405)
+Keywords: Competitive location; Maximum capture; Mixed integer fractional programming; Branch-and-bound
+
+
+
+******************************
+Stephen Mahar, Kurt M. Bretthauer, Peter A. Salzarulo, Locating specialized service capacity in a multi-hospital network, European Journal of Operational Research, Volume 212, Issue 3, 1 August 2011, Pages 596-605, ISSN 0377-2217, DOI: 10.1016/j.ejor.2011.03.008.
+(http://www.sciencedirect.com/science/article/pii/S0377221711002190)
+Keywords: OR in health services; Supply chain management in healthcare; Medical resource pooling
+
+
+******************************
+Data aggregation for p-median problems
+
+Bader F. AlBdaiwi, Diptesh Ghosh and Boris Goldengorin Journal of Combinatorial Optimization Volume 21, Number 3, 348-363, 2011
+DOI: 10.1007/s10878-009-9251-8
+******************************
+Siting and Sizing of Facilities under Probabilistic Demands
+
+Luís M. Fernandes, Joaquim J. Júdice, Hanif D. Sherali and António P. Antunes Journal of Optimization Theory and Applications Volume 149, Number 2, 420-440, 2011
+DOI: 10.1007/s10957-010-9783-1
+
+******************************
+On the number of separable partitions
+
+Frank K. Hwang and Uriel G. Rothblum
+Journal of Combinatorial Optimization
+Volume 21, Number 4, 423-433, 2011
+DOI: 10.1007/s10878-009-9263-4
+
+
+******************************
+Online facility location with facility movements
+
+Gabriella Divéki and Csanád Imreh
+Central European Journal of Operations Research Volume 19, Number 2, 191-200, 2011
+DOI: 10.1007/s10100-010-0153-8
+
+******************************
+Adriano D. Vasconcelos, Carlos D. Nassi, Luiz A.S. Lopes, The uncapacitated hub location problem in networks under decentralized management, Computers & Operations Research, Volume 38, Issue 12, December 2011, Pages 1656-1666, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.03.004.
+(http://www.sciencedirect.com/science/article/pii/S0305054811000773)
+Keywords: Hub location; Network; Integer programming; Intermodal
+
+
+******************************
+Yuce Cinar, Hande Yaman,
+The vendor location problem,
+Computers & Operations Research, Volume 38, Issue 12, December 2011, Pages 1678-1695, ISSN 0305-0548, DOI: 10.1016/j.cor.2011.02.011.
+(http://www.sciencedirect.com/science/article/pii/S0305054811000530)
+Keywords: Location; Vendor location problem; Hierarchical facility location; Valid inequalities; Computational complexity
+
+
+
+******************************
+Locating median paths on connected outerplanar graphs Isabellla Lari, Federica Ricca, Andrea Scozzari and Ronald I. Becker Networks Volume 57, Issue 3 2011 Page 294–307
+
+******************************
+The p-hub Model with Hub-catchment Areas, Existing Hubs, and Simulation: A Case Study of Serbian Intermodal Terminals
+
+Milorad Vidovic, Slobodan Zecevic, Milorad Kilibarda, Jelena Vlajic, Nenad Bjelic and Snežana Tadic Networks and Spatial Economics Volume 11, Number 2, 295-314, 2011,
+DOI: 10.1007/s11067-009-9126-7
+
+******************************
+Optimal Information Location for Adaptive Routing
+
+Stephen D. Boyles and S. Travis Waller
+Networks and Spatial Economics
+Volume 11, Number 2, 233-254, 2011
+DOI: 10.1007/s11067-009-9108-9
+
+******************************
+Catchment areas of medical practices and the role played by geographical distance in the patient’s choice of doctor
+
+Gerhard Fülöp, Thomas Kopetsch and Pascal Schöpe The Annals of Regional Science Volume 46, Number 3, 691-706, 2011
+DOI: 10.1007/s00168-009-0347-y
+
+******************************
+Mourad Baiou, Francisco Barahona,
+On the linear relaxation of the p-median problem, Discrete Optimization, Volume 8, Issue 2, May 2011, Pages 344-375, ISSN 1572-5286, DOI: 10.1016/j.disopt.2010.12.002.
+(http://www.sciencedirect.com/science/article/pii/S1572528610000733)
+Keywords: p-median problem; Uncapacitated facility location problem; Odd cycle
+
+******************************
+C.K. Kwong, X.G. Luo, J.F. Tang,
+A methodology for optimal product positioning with engineering constraints consideration, International Journal of Production Economics, Volume 132, Issue 1, July 2011, Pages 93-100, ISSN 0925-5273, DOI: 10.1016/j.ijpe.2011.03.014.
+(http://www.sciencedirect.com/science/article/pii/S0925527311001356)
+Keywords: Product positioning; Customer satisfaction; Optimization; Genetic algorithms
+
+******************************
+Spherical Distribution of 5 Points with Maximal Distance Sum
+
+Xiaorong Hou and Junwei Shao
+Discrete & Computational Geometry
+Volume 46, Number 1, 156-174, 2011
+DOI: 10.1007/s00454-010-9307-7
+
+******************************
+Michael R. Fellows, Henning Fernau,
+Facility location problems: A parameterized view, Discrete Applied Mathematics, Volume 159, Issue 11, 6 July 2011, Pages 1118-1130, ISSN 0166-218X, DOI: 10.1016/j.dam.2011.03.021.
+(http://www.sciencedirect.com/science/article/pii/S0166218X11001156)
+Keywords: Exact algorithms; Parameterized algorithms; -completeness; Facility location problems; Semistructured documents
+
+******************************
+Locating service centers optimizing customers’ perspective criteria
+
+Mehdi Seifbarghy, Reza Rabieian and Fatemeh Karimi The International Journal of Advanced Manufacturing Technology Volume 54, Numbers 5-8, 811-819, 2011
+DOI: 10.1007/s00170-010-2955-1
+
+******************************
+Y. Cardona-Valdes, A. Alvarez, D. Ozdemir, A bi-objective supply chain design problem with uncertainty, Transportation Research Part C: Emerging Technologies, Volume 19, Issue 5, Freight Transportation and Logistics (selected
+
+papers from ODYSSEUS 2009 - the 4th International Workshop on Freight Transportation and Logistics), August 2011, Pages
+
+821-832,
+ISSN 0968-090X, DOI: 10.1016/j.trc.2010.04.003.
+(http://www.sciencedirect.com/science/article/pii/S0968090X10000598)
+Keywords: Supply chain design; Multi-objective stochastic program; Transportation channel; [epsilon]-Optimality; L-shaped  method
+
+******************************
